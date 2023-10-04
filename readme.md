@@ -1,16 +1,17 @@
+
+# Create a ci
+### with the pci tooling
+
+### create a default PCI
+
 ```bash
 npx @citolab/tspci@latest init
 ```
-
-ga in subfolder met de naam van de PCI die je net aangemaakt hebt
-
+add qbci target in the subfolder
 ```bash
 npm run tspci -- add --target qbci
 ```
-
-add qbci for the correct debugging template
-add ci build with target qbci
-
+add the target to the dev, and add a build target.
 ```diff
   "scripts": {
 -   "dev": "tspci --dev"
@@ -20,6 +21,8 @@ add ci build with target qbci
 +    "ci": "npm version patch && tspci --target qbci" 
   },
 ```
+
+The following are changes you have to make to the existing PCI example to communicate in a CI environment
 
 in index.ts , add the following
 
