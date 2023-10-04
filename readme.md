@@ -1,8 +1,8 @@
 
-# Create a ci
-### with the pci tooling
+# Recipe for CI
 
-### create a default PCI
+This repository is the result for the following steps
+to go from creating a standard PCI with the tspci tooling and making minor changes to use the same tooling to create a CI.
 
 ```bash
 npx @citolab/tspci@latest init
