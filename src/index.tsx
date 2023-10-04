@@ -39,15 +39,13 @@ class App implements IMSpci<PropTypes> {
     config.properties = { ...configProps, ...config.properties }; // merge current props with incoming
     this.config = config;
 
-    this.logActions = stateString && stateString !== "undefined" ? JSON.parse(stateString).log : [];
     this.store = initStore(this.initialState);
+
     try {
-      const restoredState = stateString && stateString !== "undefined" ? JSON.parse(stateString) : null;
-      if (restoredState) {
-        this.store.restoreState(restoredState?.state, this.logActions);
-      }
-    } catch (error) {
-      console.log(error);
+      const state = JSON.parse(stateString);
+      this.store.restoreState(state.state, state.log);
+    } catch (e) {
+      console.log("no state found");      
     }
 
     // PK: ADD FOR CI --------------------
