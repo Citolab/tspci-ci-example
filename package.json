@@ -1,0 +1,33 @@
+{
+  "name": "henk",
+  "description": "Henk was here",
+  "version": "1.0.4",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "private": true,
+  "dependencies": {
+    "@citolab/preact-store": "latest",
+    "preact": "^10.13.2"
+  },
+  "devDependencies": {
+    "@citolab/tspci": "latest",
+    "@citolab/tspci-qbci": "^2.4.4",
+    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
+    "autoprefixer": "10.4.14",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "tspci --dev qbci",
+    "prod": "tspci",
+    "tspci": "tspci",
+    "ci": "npm version patch && tspci --target qbci"
+  },
+  "config": {
+    "tspci": {
+      "typeIdentifier": "Henk"
+    }
+  },
+  "source": "src/index.tsx",
+  "author": "patrickklein"
+}
