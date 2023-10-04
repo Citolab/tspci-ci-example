@@ -1,7 +1,7 @@
 {
   "name": "henk",
   "description": "Henk was here",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "private": true,
