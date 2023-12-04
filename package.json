@@ -19,8 +19,7 @@
   "scripts": {
     "dev": "tspci --dev qbci",
     "prod": "tspci",
-    "tspci": "tspci",
-    "ci": "npm version patch && tspci --target qbci",
+    "ci": "tspci --target qbci",
     "publish": "npm publish",
     "prepublishOnly": "npm version patch && npm run ci"
   },
