@@ -1,7 +1,7 @@
 {
   "name": "@citocte/ci-example",
   "description": "taartdiagram",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "dependencies": {
