@@ -21,7 +21,8 @@
     "dev": "tspci --dev qbci",
     "prod": "tspci",
     "tspci": "tspci",
-    "ci": "npm version patch && tspci --target qbci"
+    "ci": "npm version patch && tspci --target qbci",
+    "publish": "npm version && npm publish --registry http://localhost:4873"
   },
   "config": {
     "tspci": {
@@ -29,5 +30,8 @@
     }
   },
   "source": "src/index.tsx",
-  "author": "patrickklein"
+  "author": "patrickklein",
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
 }
