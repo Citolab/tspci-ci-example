@@ -21,16 +21,16 @@
     "prod": "tspci",
     "tspci": "tspci",
     "ci": "npm version patch && tspci --target qbci",
-    "publish": "npm run prod && npm version patch && npm publish --registry http://localhost:4873"
+    "publish": "npm run prod && npm version patch && npm publish"
   },
   "config": {
     "tspci": {
-      "typeIdentifier": "Henk"
+      "typeIdentifier": "taartdiagram"
     }
   },
   "source": "src/index.tsx",
   "author": "patrickklein",
   "publishConfig": {
-    "registry": "http://localhost:4873"
+    "registry": "http://localhost:4873/:_authToken=\"fooBar\""
   }
 }
