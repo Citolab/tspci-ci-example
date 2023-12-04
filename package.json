@@ -21,7 +21,8 @@
     "prod": "tspci",
     "tspci": "tspci",
     "ci": "npm version patch && tspci --target qbci",
-    "publish": "npm run prod && npm version patch && npm publish"
+    "publish": "npm publish",
+    "prepublishOnly": "npm version patch && npm run ci"
   },
   "config": {
     "tspci": {
