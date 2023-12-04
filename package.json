@@ -1,10 +1,9 @@
 {
-  "name": "henk",
-  "description": "Henk was here",
-  "version": "1.0.5",
+  "name": "@citocte/ci-example",
+  "description": "taartdiagram",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "private": true,
   "dependencies": {
     "@citolab/preact-store": "latest",
     "preact": "^10.13.2"
@@ -22,7 +21,7 @@
     "prod": "tspci",
     "tspci": "tspci",
     "ci": "npm version patch && tspci --target qbci",
-    "publish": "npm version && npm publish --registry http://localhost:4873"
+    "publish": "npm run prod && npm version patch && npm publish --registry http://localhost:4873"
   },
   "config": {
     "tspci": {
