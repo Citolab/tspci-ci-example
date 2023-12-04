@@ -31,6 +31,6 @@
   "source": "src/index.tsx",
   "author": "patrickklein",
   "publishConfig": {
-    "registry": "http://localhost:4873/:_authToken=\"fooBar\""
+    "registry": "http://localhost:4873"
   }
 }
